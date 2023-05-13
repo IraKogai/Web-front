@@ -1,0 +1,139 @@
+.header{
+    text-align: center;
+    margin: 30px;
+}
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    
+}
+
+img{
+    
+    border-radius: 5px 5px 0 0;
+
+}
+
+.container {
+    padding: 2px 16px;
+   
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+    width: 25%;
+    
+}
+.wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /**/
+
+ 
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 40px;
+}
+li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+.border {
+    list-style: none;
+    padding: 0;
+    }
+
+.border li {
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+         -2px -2px 5px 0 rgba(0,0,0,.1),
+        2px 2px 5px 0 rgba(0,0,0,.1),
+        -2px 2px 5px 0 rgba(0,0,0,.1);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+.list-link{
+    color: blue;
+    
+}
+
+.btn button{
+   display: block;
+   padding: 7px 20px;
+   margin-bottom: 10px;
+   border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: 0.3s all linear;
+    color: blue;
+    background-color: white;
+    width: 200px;
+    
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+.btn {
+   margin-top: 20px;
+   width: 250px;
+}
+
+#btn2 button{
+    margin-left: 45px;
+    color: rgb(57, 130, 240);
+ }
+
+#btn2 button:hover{
+    color: white;
+    background-color: rgb(41, 99, 224);
+}
+
+/* ТАБИ*/
+.tab-content{
+    font-size: 2.5em;
+    display: none;    
+}
+
+.tab-content.active{
+    display: block;
+    
+}
+
+.tabs-wrapper{
+    display: flex;
+}
+
+.tab-contents-wrapper{
+    width: 70%;
+    float: left;
+}
+.tabs{
+    width: 25%;
+    float: left;
+}
+
+
+/* Визуал табов*/
+#tab1{
+    font-size: large;
+    margin-bottom: 30px;
+}

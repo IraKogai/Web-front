@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WEB</title>
+    
+</head>
+<body>
+
+   <h1 class="header">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ
+    З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.
+    ОСНОВИ FRONTEND та BACKEND РОЗРОБОК"</h1>
+
+    <!-- Студенти -->
+    <section class="wrap">
+
+        <div class="card">
+            <img src="img/student_card_img_sia.jpg" alt="sia" style="width:100%">
+            <div class="container">
+                <h3>Сазончик Анастасія Жоржівна</h3>
+                <p>Бригада№ 25</p>
+                <p>IO-03</p>
+                
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="img/student_card_img_oleh.jpg" alt="oleh" style="width:100%">
+            <div class="container">
+                <h3>Дзюба Олег Глібович</h3>
+                <p>Бригада№ 25</p>
+                <p>IO-04</p>
+            </div>
+        </div>
+       
+
+        <div class="card">
+            <img src="img/student_card_img_ira.jpg" alt="ira" style="width:100%">
+            <div class="container">
+            <h3>Когай Ірина Миколаївна</h3>
+            <p>Бригада№ 25</p>
+            <p>IO-05</p>
+        </div>
+        </div>
+
+    </section>  
+        <!--  Лабораторні -->
+   
+    <ul class="border">
+        <li>
+            <a class="list-link"  href="main.html">Лабораторна №1/№2/№4</a>
+        </li>
+
+        <li>
+            <a class="list-link" href="lab3+5.html">Лабораторна №3/№5</a>
+        </li>
+
+
+    </ul>
+    
+<hr>
+
+<!-- Кнопки -->
+<div class="tabs">
+    <section class="btn"> 
+
+<button class="tab-btn active" data-tab="tab1">
+   Головна сторінка
+</button>
+
+<button class="tab-btn" data-tab="tab2">
+    Тема, мета. Місце розташування сайту, звіту
+    </button>
+
+<button class="tab-btn" data-tab="tab3">
+    Опис предметного середовища
+</button>
+
+
+<button class="tab-btn" data-tab="tab4">
+    HTML-код головної сторінки WEB-застосунку
+</button>
+
+
+<button class="tab-btn" data-tab="tab5">
+    Зовнішній вигляд головної сторінки WEB-застосунку
+</button>
+
+<button class="tab-btn" data-tab="tab6">
+    Способи підключення стилів
+    </button>
+
+<button id="expand" class="tab-btn" data-tab="tab7">
+    Селектори +
+</button>
+
+<section id="btn2">
+<button class="tab-btn" data-tab="tab7-1"> 
+        Селектори тегу
+    </button>
+<button class="tab-btn" data-tab="tab7-2"> 
+        Селектори класу
+    </button>
+<button class="tab-btn" data-tab="tab7-3"> 
+        Селектори ідентифікаторів
+    </button>
+ <button class="tab-btn" data-tab="tab7-4"> 
+        Інші селектори
+    </button>
+</section>
+
+<button class="tab-btn" data-tab="tab8">
+    CSS
+</button>
+
+<button class="tab-btn" data-tab="tab9">
+    Висновки до ЛР1/ЛР2
+</button>
+
+<button class="tab-btn" data-tab="tab10">
+    Висновки до ЛР4
+</button>
+
+<button class="tab-btn" data-tab="tab11">
+    Виконавці
+</button>
+
+
+
+</section>
+</div>
+
+
+<!-- Таби -->
+<div class="tabs-wrappers">
+<div class="tab-contents-wrapper">
+<div class="tab-content-active" id="tab1">
+    <h1>Лабораторна№1/2/4</h1>
+    <h1>Структура та опис проекту. CSS-складова</h1>
+</div>
+<hr>
+
+<!-- Тема+структура -->
+<div class="tab-content" id="tab2">
+    <h1>Тема:</h1>
+    <p>Структура HTML-документа. Вибір предметної галузі. Робота з посиланнями, таблицями, зображеннями, списками в HTML-документі.</p>
+    <h1>Мета:</h1>
+    <p>Придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами. 
+        Створити шаблон звітного HTML-документом для відображення
+        результатів роботи всіх лабораторних робіт.</p>
+    <h1>Місце розташування проекту:</h1>
+    <a href="https://github.com/siaserb/WEB-technologies.git">Git-репозиторій</a>
+</div>
+
+<!-- Опис предметного середовища -->
+<div class="tab-content" id="tab3">
+    <h1>Застосунок обліку фінансів Montrack</h1>
+  <p>Даний проект створений для того, щоб допомогти користувачам контролювати свої фінанси. 
+
+    Предметне середовище проекту передбачає наявність різноманітних фінансових операцій, що можуть бути пов'язані з різними сферами життя користувачів, такими як особисті доходи та витрати, бізнес-фінанси, інвестиції тощо. Управління фінансовими операціями є важливим елементом життєвої діяльності кожної людини та організації, тому наш проект може бути корисним для широкої аудиторії.</p>
+<h1>Функціонал</h1>
+<li>Авторизація</li>
+<li>Реєстрація</li>
+
+<h1>Візуал</h1>
+<li>Перегляд інвестицій</li>
+<li>Налаштування</li>
+<li>Можливість перегляду прибутку/збитку</li>
+<li>Поточні витрати за поточний/минулий тиждень</li>
+<li>Категорії витрат</li>
+<li>Статистика виплат</li>
+<li>Перегляд дебітових/кредитних карт</li>
+<li>Перегляд дитячих/архівованих карт</li>
+<li>Додавання нових карт</li>
+
+</div>
+
+<!-- html код главной стр -->
+<div class="tab-content" id="tab4">
+    <a href="https://github.com/siaserb/WEB-technologies/blob/main/index.html">Посилання на GitHub</a>
+</div>
+
+<!-- главная стр -->
+<div class="tab-content" id="tab5">
+   <img src="img/mainpage.jpg" alt="mainpage" width="100%">
+</div>
+
+<!-- способы подключения css стилей -->
+<div class="tab-content" id="tab6">
+    <h1>Ми підключали стилі CSS 2-ма способами:</h1>
+    <p>Зовнішні стилі: Створили окремий файл зі стилями CSS і підключили його до сторінки за допомогою тегу link:</p>
+    <p>CDN (Content Delivery Network): Використали CDN-сервіси, підключили стилі до нашої сторінки за допомогою URL-адреси:</p>
+    <img src="img/css-1.PNG" width="100%">
+</div>
+
+<!-- селекторы тега -->
+<div class="tab-content" id="tab7-1">
+    <p>Селектор тега - це спосіб вибору елементів на веб-сторінці за їхнім тегом. Він записується з використанням імені тега без будь-яких додаткових символів.</p>
+    <pre>
+      
+      main{
+        width: 85%;
+        height: 100%;
+        position: absolute;
+        top: auto;
+        left: 15%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      i {
+        font-size: 0.75em;
+      }
+      
+      nav {
+        width: 20%;
+      }
+      
+      aside {
+        background-color: black ;
+        height: 100%;
+        width: 20%;
+        position: absolute;
+      }
+    </pre>
+</div>
+
+<!-- селекторы класса -->
+<div class="tab-content" id="tab7-2">
+    <p>Селектор класу - це спосіб вибору елементів на веб-сторінці за їхнім класом. Він записується з використанням крапки перед ім'ям класу.</p>
+    <pre>
+        .categories {
+            color: white;
+            font-size: 1.5em;
+            font-weight: 300;
+            position: absolute;
+            left: 10%;
+            top: 3%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          
+          }
+            
+          .categories li a, .categories li {
+            padding: 20px 0;
+          }
+          
+          .main-slide li a, .main-slide li {
+            padding: 20px 0;
+          }
+          
+          .category {
+            cursor: pointer;
+          }
+          
+          .expand {
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+          }
+          
+          .subcategories {
+            max-height: 0;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            transition: max-height 0.5s ease-out;
+          }
+          
+          .subcategories li {
+            padding-left: 20px;
+          }
+          /* End of list in aside */
+          
+          .section1{
+            background-color: white;
+            width: 29.9%;
+            height: 100%;
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-right-color: #dbdbdb;
+          }
+          
+          .main-slide {
+            max-height: 90%;
+            overflow-y: auto;
+          }
+          
+          .main-slide::-webkit-scrollbar {
+            display: none;
+          }
+          
+          .Name {
+            width: 30%;
+            padding: 0%;
+          }
+          
+          .Amount {
+            width: 30%;
+            padding: 0%;
+          }
+          
+          .Image {
+            width: 15%;
+            padding: 0%;
+          }
+          
+          .subcategory{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+          
+          .mini-card{
+            font-size: 40%;
+            border-radius: 5px;
+            color: white; 
+            position: relative;
+            background: linear-gradient(to right, #f6e58d, #ffbe76);
+            color: #000000;
+          }
+          
+          .mini-card__logo{
+            position: relative;
+            left: 10%;
+          
+          }
+          
+          .mini-card__number{
+            position: relative;
+            left: 5%;
+          }
+          
+          .mini-card__name{
+            position: relative;
+            left: 10%;
+          }
+          
+          .mini-card__expiry{
+            position: relative;
+            left: 10%;
+          }
+          
+          .button {
+            background-color: #ffbe76;
+            border: 0;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: black;
+            font-size: 1.3em;
+            font-weight: 500;
+            font-variant: small-caps;
+            text-align: center;
+            list-style: none;
+            text-decoration: none;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 90%;
+            right: 80%;
+            }
+          
+          .section2 {
+            background-color: #000000;
+            width: 70%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+          }
+          .card {
+            width: 30%;
+            height: 60%;
+            margin-top: 3%;
+            margin-right: 10%;
+            margin-bottom: 10%;
+            border-radius: 15px;
+            padding: 20px;
+            position: relative;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            background-color: black;
+          }
+          
+          .card.is-flipped {
+            transform: rotateY(180deg);
+          }
+          
+          .card__front, .card__back {
+            border-radius: 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          
+          .card__front {
+            background: linear-gradient(to right, #f6e58d, #ffbe76);
+          }
+          
+          .card__back {
+            background:#ffbe76;
+            transform:
+            rotateY(180deg);
+          }
+          
+          .card__logo {
+            font-size:24px;
+            position:absolute;
+            top:20px;
+            left:20px;
+          }
+          
+          .card__number {
+            font-size:20px;
+            letter-spacing:2px;
+            position:absolute;
+            top:45%;
+            left:20%;
+          }
+          
+          .card__name,
+          .card__expiry {
+            font-size:16px;
+          }
+          
+          .card__name {
+            position:absolute;
+            bottom:20px;
+            left:20px;
+          }
+          
+          .card__expiry {
+            position:absolute;
+            bottom:40px;
+            left:20px;
+          }
+          
+          .card__cvv {
+            font-size:24px;
+            position:absolute;
+            top:80%;
+            left:80%;
+            transform:translate(-50%,-50%);
+          }
+          .fa-ellipsis{
+            font-size: 100%;
+          }
+          
+          .section3{
+            width: 70%;
+            height: 30%;
+            display: flex ;
+            flex-direction: row;
+          
+          }
+          
+          .section3_1{
+            width: 50%;
+            height: 100%;
+            
+          }
+          
+          .spendings-container{
+            display:flex;
+            flex-direction: column;
+            height: 80%;
+            width: 80%;
+            position: relative;
+            top: 10%;
+            left:10%
+          }
+          .columns-container{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 50%;
+            position: relative;
+          }
+          
+          .columns{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 100%;
+            width: 8%;
+          }
+          
+          .column{
+            height: 100%;
+            width: 35%;
+            border-radius: 5%;
+          }
+          
+          .column.last-week{
+            background-color: rgb(212, 212, 212);
+          }
+          
+          .column.this-week{
+            background-color:  #ffbe76;
+          }
+          
+          .sun.column.this-week{
+            height: 100%;
+          }
+          
+          .sun.column.last-week{
+            height: 50%;
+          }
+          
+          .mon.column.this-week{
+            height: 80%;
+          }
+          
+          .mon.column.last-week{
+            height: 70%;
+          }
+          
+          .tue.column.this-week{
+            height: 90%; 
+          }
+          
+          .tue.column.last-week{
+            height: 75%;
+          }
+          
+          .wed.column.this-week{
+            height: 40%;
+          }
+          
+          .wed.column.last-week{
+            height: 55%;
+          }
+          
+          .thur.column.this-week{
+            height: 65%;
+          }
+          
+          .thur.column.last-week{
+            height: 85%;
+          }
+          
+          .fri.column.this-week{
+            height: 10%;
+          }
+          
+          .fri.column.last-week{
+            height: 40%;
+          }
+          
+          .sat.column.this-week{
+            height: 5%;
+          }
+          
+          .sat.column.last-week{
+            height: 45%;
+          }          
+          .section3_2{
+            width: 50%;
+            height: 100%;
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-left-color: #dbdbdb;
+          }
+          
+          .categories-container{
+            display:flex;
+            flex-direction: column;
+            height: 80%;
+            width: 80%;
+            position: relative;
+            top: 10%;
+            left:10%
+          }
+          
+          .categories-text{
+            height: 25%;
+          }
+          
+          .categories-diagram{
+            height: 2.5%;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+          }
+          
+          .diagram.Supermarkets{
+            width: 31%;
+            background-color:#F24726;;
+          }
+          
+          .diagram.Medicine{
+            width: 16%;
+            background-color:#FAC710;
+          }
+          
+          .diagram.Clothes-and-Shoes{
+            width: 12%;
+            background-color:#9510AC;
+          }
+          
+          .diagram.Fast-food{
+            width: 9%;
+            background-color:#414BB2;
+          }
+          
+          .diagram.Petrol{
+            width: 8%;
+            background-color:#2D9BF0;
+          }
+          
+          .diagram.Entertainment{
+            width: 7%;
+            background-color:#8FD14F;
+          }
+          
+          .diagram.Beauty{
+            width: 5%;
+            background-color:#CEE741;
+          }
+          
+          .diagram.Other{
+            width: 12%;
+            background-color:#808080;
+          }
+          
+          .categoies-comments{
+            height: 65%;
+            display: flex;
+            align-content: space-around;
+            gap: 10px;
+            flex-wrap: wrap;
+            position: relative;
+            top: 5%;
+          }
+          
+          .comment{
+            border-style: solid;
+            border-radius: 5%;
+            border-width: 1px;
+            border-color: #dddddd;
+            padding: 1%;
+          }
+          
+          .section4{
+            width: 70%;
+            height: 29.89%;
+            margin-top: auto;
+            margin-left: auto;
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-top-color: #dbdbdb;
+          }
+        
+    </pre>
+</div>
+
+<!-- селекторы идентификатора -->
+<div class="tab-content" id="tab7-3">
+    <p>Селектори ідентифікатора в CSS використовуються для стилізації конкретних елементів HTML на основі їхніх унікальних ідентифікаторів. Ідентифікатор елемента задається в HTML за допомогою атрибута 'id'</p>
+    <pre>
+        #section2-1{
+            display: flex;
+            justify-content: flex-end;
+            height: 80%;
+          }
+          
+          #card-info{
+            width: 52%;
+            display: flex;
+            flex-direction: column;
+          }
+          
+          #amount{
+           color: white;
+           font-size: 200%;
+          }
+          
+          #buttons{
+           height: 20%;
+          }
+          
+          #income-outcome{
+            height: 10%;
+          }
+          
+          #income-amount-outcome-amount{
+          
+          }
+          
+          #transfer{
+            color: white;
+            background-color: #222222;
+            border: none;
+            border-radius: 5px;
+            box-shadow: none;
+            height: 60%;
+            width: 30%;
+            position: relative;
+            top: 0%;
+          }
+          
+          #request{
+            color: white;
+            background-color: #222222;
+            border: none;
+            border-radius: 5px;
+            box-shadow: none;
+            height: 60%;
+            width: 30%;
+            position: relative;
+          }
+          
+          #income{
+            color: rgb(226, 226, 226);
+            width: 30%;
+            height: 10%;
+            margin: 0;
+            position: relative;
+            
+          }
+          
+          #income-amount{
+            color: white;
+            font-size: 130%;
+            width: 30%;
+            height: 10%;
+            margin: 0;
+            position: relative;
+            
+          }
+          
+          #outcome{
+            color: rgb(226, 226, 226);
+            width: 30%;
+            height: 10%;
+            margin: 0;
+            position: relative;
+            left: 25%;
+          }
+          
+          #outcome-amount{
+            color: white;
+            font-size: 130%;
+            width: 30%;
+            height: 10%;
+            margin: 0;
+            position: relative;
+            left: 19.5%;
+          }
+          
+    </pre>
+</div>
+
+<!-- другие селекторы -->
+<div class="tab-content" id="tab7-4">
+    <h1>Group Selector</h1>
+    <p>За допомогою селектора групи ви можете застосувати один і той самий набір стилів до кількох елементів.  </p>
+    <pre>
+        ul, li {
+            list-style: none;
+          }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+          }
+          .categories li a, .categories li {
+            padding: 20px 0;
+          }
+          
+          .main-slide li a, .main-slide li {
+            padding: 20px 0;
+          }
+    </pre>
+    <h1>Compound Selector</h1>
+    <p>Складовий селектор (compound selector), який об'єднує в собі селектори ідентифікатора і тега.</p>
+    <pre>
+        #section2-2 button{
+            color: rgb(226, 226, 226);
+            background-color: #000000;
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            box-shadow: none;
+            font-size: 110%;
+            height: 40%;
+            width: 17%;
+            position: relative;
+            top: 30%;
+            
+          }
+
+          #table-scroll::-webkit-scrollbar {
+            display: none;
+          }
+          
+    </pre>
+</div>
+
+<!-- css -->
+<div class="tab-content" id="tab8">
+    <p>В CSS частині знаходяться стилі, які використовуються для відображення структури на сторінці. Використовується багато стилів, таких як вирівнювання, розміри, колір, шрифт, фон, рамки та інші. Код також містить класи і ідентифікатори, які допомагають звертатися до певних елементів і застосовувати до них стилі.</p>
+    <h1>Базові стилі</h1>
+    <li>padding та margin для збільшення/зменшення відстаней між елементами на сторінці;</li>
+    <li>position та top, left для зміщення елементів на сторінці;</li>
+    <li>display та flexbox для управління розміщенням та відображенням елементів на сторінці;</li>
+    <li>background-color для задання фонового кольору;</li>
+    <li>border-style, border-radius, border-width, border-color для налаштування рамок навколо елементів;</li>
+    <li>width та height для встановлення розмірів елементів на сторінці;</li>
+    <li>font-size для встановлення розміру шрифту.</li>
+<p>Ми використали селектори для вибору елементів, до яких будуть застосовуватися стилі. У цьому коді використовуються класи, ID та елементні селектори. Наприклад, .header вибирає всі елементи з класом "header" для застосування стилів.
+<p>Також використовуються псевдокласи та псевдоелементи, які дозволяють застосовувати стилі до певних станів елементів (наприклад, :hover для стану "наведення" на елемент).</p>
+<p>Усі ці елементи дозволяють задати детальний вигляд та поведінку елементів на сторінці.</p>
+
+</div>
+
+<!-- висновки лаб1/2 -->
+<div class="tab-content" id="tab9">
+    <p>Наш веб-проект "Застосунок обліку фінансів" успішно вирішує завдання автоматизації обліку фінансових операцій. Проект має простий та зручний інтерфейс, що дозволяє легко та швидко здійснювати операції з фінансами. В проекті реалізовані всі необхідні функції для додавання, редагування та видалення операцій, а також можливість генерування звітів за різними параметрами. Було використано сучасні технології, такі як HTML, CSS, JavaScript для побудови клієнтської частини проекту, зі стэком FastApi + Vue3.js для побудови серверної частини. Проект має добру структуру та кодування, що сприяє легкому розширенню та підтримці в майбутньому. Загалом, наш проект є ефективним та корисним інструментом для обліку фінансів, що забезпечує зручність та ефективність в управлінні фінансовими операціями.</p>
+</div>
+
+<!-- висновки лаб4 -->
+<div class="tab-content" id="tab10">
+    <p>Цей проект містить стильну та добре організовану CSS-структуру, що дозволяє легко керувати виглядом та розміщенням елементів на сторінці. В CSS було використано різноманітні селектори та властивості, щоб досягти бажаного вигляду для кожного елемента. Всі властивості та класи CSS були документовані для забезпечення зрозумілості та підтримки коду в майбутньому. Загалом, CSS в цьому проекті є добре організованим та оптимізованим, що забезпечує високу якість та ефективність веб-додатка.</p>
+</div>
+
+<!-- студенты -->
+<div class="tab-content" id="tab11">
+    <h1>Роботу виконали:</h1>
+    <h1>Сазончик Анастасія Жоржівна ІО-03</h1>
+    <p>Номер телефону</p>
+    <p>380973636172</p>
+    <a href="https://t.me/siaserb">Телеграм</a>
+    <hr>
+    
+    <h1>Когай Ірина Миколаївна ІО-05</h1>
+    <p>Номер телефону</p>
+    <p>380996273433</p>
+    <a href="https://t.me/irakogai">Телеграм</a>
+    <hr>
+
+    <h1> Дзюба Олег Глібович ІО-04</h1>
+    <p>Номер телефону</p>
+    <p>380633673602</p>
+    <a href="https://t.me/olegzeyyy">Телеграм</a>
+    <hr>
+    
+   
+
+</div>
+
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
